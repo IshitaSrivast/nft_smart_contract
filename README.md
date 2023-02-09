@@ -22,15 +22,15 @@ The subgraph manifest subgraph.yaml defines the smart contracts your subgraph in
 
 In the 721, transfer and approve emit events. In the smart contract, tranfer has been called in buy() function.
 The schema for your subgraph is in the file schema.graphql.
-Since I was working on NFT tracking system. The above smart contract gives a collection ID to the non-fungible tokens. While creating a schema for the GraphQL, following entities have been defined.
+Since I was working on NFT tracking system. The above smart contract gives a collection ID to the non-fungible tokens. While creating a schema for the GraphQL, following entities have been defined:
 
-{
-
-
-Token ID
+type funnft @entity(immutable: true){
 
 
-Owner
+Token ID : bytes
+
+
+Owner: bytes
 
 }
 
