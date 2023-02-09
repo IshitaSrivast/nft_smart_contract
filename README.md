@@ -17,9 +17,20 @@ To deploy a subgraph, we firstly deploy the smart contract and get the address w
  
 For creating a new project from an example subgraph, the command is:
  `graph init --studio <SUBGRAPH_SLUG>`
- 
+
+The subgraph manifest subgraph.yaml defines the smart contracts your subgraph indexes, which events from these contracts to pay attention to.
+
+In the 721, transfer and approve emit events. In the smart contract, tranfer has been called in buy() function.
 The schema for your subgraph is in the file schema.graphql.
-I am currently working on NFT tracking system. The above smart contract gives a collection ID to the non-fungible tokens. While creating a schema for the GraphQL, following entities have been defined.
+Since I was working on NFT tracking system. The above smart contract gives a collection ID to the non-fungible tokens. While creating a schema for the GraphQL, following entities have been defined.
+
+{
+
+
 Token ID
+
+
 Owner
-Price
+
+}
+
