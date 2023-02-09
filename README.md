@@ -8,14 +8,12 @@ ERC tokens.
 
 # mint()
 This function mints the tokens and adds them to the collection.
-#buy()
+# buy()
 This function helps in the trade of the NFTs
 
 To deploy a subgraph, we firstly deploy the smart contract and get the address where the smart contract is deployed. Then, the following commands are executed:
 
- # npm install -g @graphprotocol/graph-cli
- 
- # graph init --studio <SUBGRAPH_SLUG>
-
+ npm install -g @graphprotocol/graph-cli
+ graph init --studio <SUBGRAPH_SLUG>
 
 I am currently working on NFT tracking system.
