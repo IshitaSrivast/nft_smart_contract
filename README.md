@@ -17,7 +17,8 @@ To deploy a subgraph, we firstly deploy the smart contract and get the address w
  
 For creating a new project from an example subgraph, the command is:
  `graph init --studio <SUBGRAPH_SLUG>`
-The schema for your subgraph is in the file schema.graphql
+ 
+The schema for your subgraph is in the file schema.graphql.
 I am currently working on NFT tracking system. The above smart contract gives a collection ID to the non-fungible tokens. While creating a schema for the GraphQL, following entities have been defined.
 Token ID
 Owner
